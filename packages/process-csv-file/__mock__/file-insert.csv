@@ -1,0 +1,8 @@
+Tipo de importação,Competência,Empresa Id,Operadora Id,Enviado por,,,,,,
+Base,10/06/2023,1,,alexandre.picolo@teste.com,,,,,,
+,,,,,,,,,,
+Tipo de beneficiário,Código do plano,Nome do plano,Número da carteirinha,Carteirinha do titular,CPF,Nome Completo,Data de nascimento,Genero,Email Titular,CPF do titular
+titular,,,,,42950366834,Alexandre Picolo,05/05/1994,M,alexandre.picolo@teste.com,
+dependente,,,,,47839920044,teste teste,10/02/2015,F,alexandre.picolo@teste.com,42950366848
+titular,,,,,42950366877,pessoa 01,05/05/1993,M,,42950366845
+titular,,,,,42950366888,pessoa 02,05/05/1992,M,,42950366878

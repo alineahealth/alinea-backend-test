@@ -1,0 +1,28 @@
+{
+  "name": "@beneficiaries-domain/common",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/pg": "^8.6.6"
+  },
+  "scripts": {
+    "test": "true",
+    "test:debug": "true",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alineahealth/beneficiary-domain.git"
+  },
+  "author": "Alinea Health",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alineahealth/beneficiary-domain/issues"
+  },
+  "homepage": "https://github.com/alineahealth/beneficiary-domain#readme",
+  "dependencies": {
+    "@aws-sdk/client-eventbridge": "^3.300.0"
+  }
+}

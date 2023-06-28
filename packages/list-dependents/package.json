@@ -1,0 +1,26 @@
+{
+  "name": "@beneficiaries-domain/list-dependents",
+  "version": "0.1.0",
+  "description": "List dependents beneficiaries with API Gatewawy, Lambda and PostgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --silent",
+    "test:debug": "jest",
+    "build": "tsc",
+    "lint": "eslint ./src --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alineahealth/beneficiary-domain.git"
+  },
+  "keywords": [
+    "beneficiary",
+    "aws"
+  ],
+  "author": "Alinea Health",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alineahealth/beneficiary-domain/issues"
+  },
+  "homepage": "https://github.com/alineahealth/beneficiary-domain#readme"
+}

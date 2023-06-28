@@ -1,0 +1,30 @@
+export const mockData = [
+  {
+    beneficiaryType: "Dependent",
+    insurance: "ABC Insurance Company",
+    healthPlanCode: "A",
+    healthPlanName: "Plan A",
+    healthPlanCardId: "00000002",
+    holderHealthPlanCardId: "00000001",
+    cpf: "11111111111",
+    fullName: "John Doe",
+    birthDate: new Date("1990-01-01"),
+    gender: "Male",
+    company: "Company B",
+    holderCPF: "",
+  },
+  {
+    beneficiaryType: "Holder",
+    insurance: "ABC Insurance Company",
+    healthPlanCode: "B",
+    healthPlanName: "Plan B",
+    healthPlanCardId: "00000001",
+    holderHealthPlanCardId: "",
+    cpf: "111111111-2",
+    fullName: "Johnny Doe",
+    birthDate: new Date("2010-01-01"),
+    gender: "Male",
+    company: "Company A",
+    holderCPF: "11111111111",
+  }
+];

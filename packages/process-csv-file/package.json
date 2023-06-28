@@ -1,0 +1,28 @@
+{
+  "name": "@beneficiaries-domain/process-csv-file",
+  "version": "1.0.0",
+  "description": "Processes the csv file for the registration of beneficiaries.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --silent",
+    "test:debug": "jest",
+    "build": "tsc",
+    "lint": "eslint ./src --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alineahealth/beneficiary-domain.git"
+  },
+  "keywords": [
+    "beneficiary",
+    "aws",
+    "csv",
+    "file"
+  ],
+  "author": "Alinea Health",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alineahealth/beneficiary-domain/issues"
+  },
+  "homepage": "https://github.com/alineahealth/beneficiary-domain#readme"
+}
