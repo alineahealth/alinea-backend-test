@@ -1,0 +1,12 @@
+variable "iam_role_name" {}
+variable "iam_policy_name" {}
+variable "env" {}
+variable "region" {}
+variable "account_id" {}
+variable "parameter_beneficiaries_name" {}
+variable "domain_name" {}
+variable "mobile_api_gateway_name" {}
+variable "data_put_many_policy" {}
+variable "data_put_many_role" {}
+variable "api_key_value" {}
+variable "event_bus_name" {}
