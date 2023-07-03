@@ -64,7 +64,7 @@ export const createBeneficiaries = async (data: ICreateBeneficiary, id: string, 
 
   const query = `
     INSERT INTO beneficiaries (id, company_id, cpf, health_plan_card_id, beneficiary_type_id, name, birth_date, health_plan_id, status_id, gender, created_at)
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)`
+    VALUES (${data.companyId}, ${data.cpf}, ${data.healthPlanCardId}, ${data.beneficiaryTypeId}, ${data.name}, ${data.birthDate}, ${data.healthPlanId}, 1, ${data.gender}, ${today})`
 
   const values = [id, data.companyId, data.cpf, data.healthPlanCardId, data.beneficiaryTypeId, data.name, data.birthDate, data.healthPlanId, 1, data.gender, today];
   try {

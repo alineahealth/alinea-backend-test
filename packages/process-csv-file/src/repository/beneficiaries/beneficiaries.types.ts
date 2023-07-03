@@ -71,7 +71,7 @@ export interface IBeneficiaryToCreate {
   beneficiaryTypeId: number;
   name: string;
   cpf: string;
-  birthDate: Date;
+  birthDate: string;
   healthPlanId?: number;
   statusId: number;
   gender: string;

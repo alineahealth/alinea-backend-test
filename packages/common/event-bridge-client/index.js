@@ -9,8 +9,8 @@ const publishEventBridgeEvent = async (detailType, eventBusName, awsRegion, trac
             {
                 Detail: JSON.stringify(detail),
                 DetailType: detailType,
-                Source: 'beneficiary-domain',
-                EventBusName: eventBusName
+                Source: "beneficiary-domain",
+                EventBusName: eventBusName,
             },
         ],
     };
@@ -18,9 +18,8 @@ const publishEventBridgeEvent = async (detailType, eventBusName, awsRegion, trac
         const command = new client_eventbridge_1.PutEventsCommand(params);
         const result = await client.send(command);
         console.info({
-            trackingId,
-            message: `will publish ${eventBusName} into ${awsRegion}`,
-            data: result.$metadata.httpStatusCode
+            message: `Publishing "${eventBusName}" into "${awsRegion}" region with trackingId: ${trackingId}`,
+            data: result.$metadata.httpStatusCode,
         });
         return true;
     }

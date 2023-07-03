@@ -1,7 +1,7 @@
 import { APIGatewayProxyEventQueryStringParameters } from "aws-lambda";
 
 export interface IListBeneficiariesParams {
-  tracingID: string;
+  tracingID: number;
   queryStringParameters: APIGatewayProxyEventQueryStringParameters | null;
 }
 
@@ -10,7 +10,7 @@ export interface IListBeneficiariesFindParams {
   page?: number;
   name?: string;
   itemsPerPage?: number;
-  cpf?: string;
+  cpf: string;
 }
 
 export interface IListBeneriaries {
@@ -28,7 +28,7 @@ export interface IBeneficiary {
   beneficiaryTypeId: number;
   name: string;
   cpf: string;
-  birthDate: string;
+  birthDate: Date;
   healthPlanId: number;
   statusId: number;
   gender: string;

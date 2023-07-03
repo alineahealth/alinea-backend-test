@@ -23,11 +23,11 @@ resource "aws_lambda_function" "list_beneficiaries_function" {
   layers           = [aws_lambda_layer_version.node_modules_layer.arn]
   environment {
     variables = {
-      DB_HOST = local.param.DB_HOST,
-      DB_PORT = local.param.DB_PORT,
-      DB_USER = local.param.DB_USER,
+      DB_HOST     = local.param.DB_HOST,
+      DB_PORT     = local.param.DB_PORT,
+      DB_USER     = local.param.DB_USER,
       DB_PASSWORD = local.param.DB_PASSWORD,
-      DB_NAME = local.param.DB_NAME,
+      DB_NAME     = local.param.DB_NAME,
     }
   }
 }
@@ -50,7 +50,7 @@ resource "aws_api_gateway_resource" "beneficiaries_list" {
 resource "aws_api_gateway_method" "beneficiaries_list_method" {
   rest_api_id = aws_api_gateway_rest_api.beneficiaries_domain_api.id
   resource_id = aws_api_gateway_resource.beneficiaries_list.id
-  http_method = "GET"
+  http_method = "POST"
   # TODO: Alterar autorização para cognito
   authorization = "NONE"
 }

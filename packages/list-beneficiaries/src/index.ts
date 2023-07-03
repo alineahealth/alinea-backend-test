@@ -13,12 +13,12 @@ export const handler = async (
       tracingID,
     });
     return {
-      statusCode: 200,
+      statusCode: 201,
       body: JSON.stringify(listBeneficiariesResult),
     };
   } catch (err) {
     return {
-      statusCode: 400,
+      statusCode: 200,
       body: (err as Error).message,
     };
   }

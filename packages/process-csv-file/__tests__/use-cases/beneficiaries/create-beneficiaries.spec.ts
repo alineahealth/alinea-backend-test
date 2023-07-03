@@ -118,8 +118,7 @@ describe("createBeneficiaries", () => {
     await createBeneficiaries(
       tracingId,
       companyId,
-      healthPlans,
-      beneficiariesToCreate
+      healthPlans
     );
 
     // Verify createBeneficiariesAsync is called with the correct parameters

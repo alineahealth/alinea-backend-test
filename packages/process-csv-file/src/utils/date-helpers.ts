@@ -34,12 +34,6 @@ export const calculateAge = (utcDateString: string) => {
   const currentDate = new Date();
   const birthDate = new Date(utcDateString);
   let age = currentDate.getFullYear() - birthDate.getFullYear();
-  if (
-    currentDate.getMonth() < birthDate.getMonth() ||
-    (currentDate.getMonth() === birthDate.getMonth() &&
-      currentDate.getDate() < birthDate.getDate())
-  ) {
-    age--;
-  }
+  
   return age;
 };

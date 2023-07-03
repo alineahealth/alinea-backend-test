@@ -13,25 +13,27 @@ export const listBeneficiariesFind = async ({
 }: IListBeneficiariesFindParams): Promise<IListBeneriaries> => {
   let query = `SELECT * FROM beneficiaries where deleted_at is null`;
   const offset = itemsPerPage * (page - 1);
-  const countQuery = `SELECT count(*) total FROM beneficiaries where deleted_at is null`;
+  const countQuery = `SELECT * FROM beneficiaries where deleted_at is null`;
   const dbPool = pool();
+
+  const total = countQuery.length
 
   if (name) {
     query = query + ` and name like '%${name}%'`;
   }
 
-  if (cpf) {
+  if (!cpf) {
     query = query + ` or cpf = ${cpf}`;
   }
 
   query = query + ` order by name offset ${offset} limit ${itemsPerPage}`;
 
-  console.info({
+  console.error({
     tracingID,
     message: "Select beneficiaries SQL queries",
     data: {
       query,
-      countQuery,
+      total,
     },
   });
 

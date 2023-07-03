@@ -61,7 +61,7 @@ export const createBeneficiaries = async (
           : 2,
       name: beneficiary.processedRow.fullName,
       cpf: beneficiary.processedRow.cpf,
-      birthDate: forceParseDateString(beneficiary.processedRow.dateOfBirth),
+      birthDate: beneficiary.processedRow.dateOfBirth,
       healthPlanId: healthPlan?.id,
       statusId: 1,
       gender: beneficiary.processedRow.gender,
